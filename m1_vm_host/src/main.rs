@@ -70,7 +70,7 @@ async fn prefetch_memory(cache: Arc<Mutex<Vec<u8>>>) {
 async fn start_qemu_vm() {
     println!("Starting QEMU VM with shared RAM...");
 
-    // Total memory = 8G (M1) + 32G (M2) = 40G
+    // Total memory = 5G (M1) + 32G (M2) = 40G
     let total_memory = "37G";
     let local_memory = "5G";
     let shared_memory = "32G";
